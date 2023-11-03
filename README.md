@@ -27,3 +27,23 @@ Base style:
     --c-bar-bgr-hover: #c3c3c3;
 }
 ```
+
+Add another font:
+
+Monospace:
+```
+--font-main: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+```
+
+Load fonts:
+
+@font-face {
+  font-family: "FontName";
+  src: url("fontname-bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "FontName";
+  src: url("fontname-regular.woff2") format("woff2");
+  font-weight: normal;
+}
