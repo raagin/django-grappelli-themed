@@ -37,6 +37,7 @@ Monospace:
 
 Load fonts:
 
+```
 @font-face {
   font-family: "FontName";
   src: url("fontname-bold.woff2") format("woff2");
@@ -47,3 +48,4 @@ Load fonts:
   src: url("fontname-regular.woff2") format("woff2");
   font-weight: normal;
 }
+```
