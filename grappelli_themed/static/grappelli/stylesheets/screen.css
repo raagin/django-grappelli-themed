@@ -2,9 +2,9 @@
     --font-main: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu,Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial,sans-serif;
     --c-bgr: #222;
     --c-btn: white;
-    --c-bgr-btn: #222;
-    --c-bgr-btn-border: #777;
-    --c-bgr-btn-hover: #333;
+    --c-btn-bgr: #222;
+    --c-btn-bgr-border: #777;
+    --c-btn-bgr-hover: #333;
     --f-color: #444;
     --f-color-dark: #222;
     --link-color-hover: #666;
@@ -3197,8 +3197,8 @@ input[type=submit] {
     overflow: hidden;
     vertical-align: top;
     color: var(--c-btn);
-    border: 1px solid var(--c-bgr-btn-border);
-    background-color: var(--c-bgr-btn)
+    border: 1px solid var(--c-btn-bgr-border);
+    background-color: var(--c-btn-bgr)
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -3236,8 +3236,8 @@ input[type=button].grp-button {
     overflow: hidden;
     vertical-align: top;
     color: var(--c-btn);
-    border: 1px solid var(--c-bgr-btn-border);
-    background-color: var(--c-bgr-btn);
+    border: 1px solid var(--c-btn-bgr-border);
+    background-color: var(--c-btn-bgr);
     padding: 5px 10px
 }
 
@@ -3739,9 +3739,9 @@ img[src*="admin/img/icon-yes"][src$=".gif"] {
     font-weight: bold;
     border-radius: 30px;
     color: var(--c-btn);
-    border: 1px solid var(--c-bgr-btn-border);
+    border: 1px solid var(--c-btn-bgr-border);
     opacity: .7;
-    background: var(--c-bgr-btn)
+    background: var(--c-btn-bgr)
 }
 
 .grp-object-tools a.grp-state-focus {
@@ -3750,25 +3750,25 @@ img[src*="admin/img/icon-yes"][src$=".gif"] {
 
 .grp-object-tools a:hover {
     opacity: 1;
-    background: var(--c-bgr-btn-hover)}
+    background: var(--c-btn-bgr-hover)}
 
 .grp-object-tools a.grp-add-link {
     padding-left: 28px;
-    background: url(../images/spritesheet-1694777276.png) 0px -17933px no-repeat, var(--c-bgr-btn);
+    background: url(../images/spritesheet-1694777276.png) 0px -17933px no-repeat, var(--c-btn-bgr);
 }
 
 .grp-object-tools a.grp-add-link:hover {
-    background: url(../images/spritesheet-1694777276.png) 0px -17933px no-repeat, var(--c-bgr-btn-hover)
+    background: url(../images/spritesheet-1694777276.png) 0px -17933px no-repeat, var(--c-btn-bgr-hover)
 }
 
 .grp-object-tools a.grp-viewsite-link,
 .grp-object-tools a[target=_blank] {
     padding-left: 28px;
-    background: url(../images/spritesheet-1694777276.png) 0px -18157px no-repeat, var(--c-bgr-btn)}
+    background: url(../images/spritesheet-1694777276.png) 0px -18157px no-repeat, var(--c-btn-bgr)}
 
 .grp-object-tools a.grp-viewsite-link:hover,
 .grp-object-tools a[target=_blank]:hover {
-    background: url(../images/spritesheet-1694777276.png) 0px -18157px no-repeat, var(--c-bgr-btn-hover)
+    background: url(../images/spritesheet-1694777276.png) 0px -18157px no-repeat, var(--c-btn-bgr-hover)
 }
 
 .grp-tools {
@@ -4832,7 +4832,7 @@ form#grp-changelist-search-form {
     padding-left: 12px;
     padding-right: 12px;
     color: var(--c-btn);
-    background: var(--c-bgr-btn);
+    background: var(--c-btn-bgr);
     margin-left: -2px;
     border-radius: 15px;
 }
@@ -4928,7 +4928,7 @@ li.grp-changelist-actions .grp-horizontal-list a {
     color: var(--c-btn);
     font-weight: bold;
     border: 1px solid #111;
-    background: var(--c-bgr-btn)
+    background: var(--c-btn-bgr)
 }
 
 li.grp-changelist-actions .grp-horizontal-list a:hover {
@@ -4940,8 +4940,8 @@ li.grp-changelist-actions .grp-horizontal-list a:hover {
 li.grp-changelist-actions .grp-horizontal-list span {
     color: var(--c-btn);
     cursor: default !important;
-    border: 1px solid var(--c-bgr-btn-border);
-    background: var(--c-bgr-btn) !important
+    border: 1px solid var(--c-btn-bgr-border);
+    background: var(--c-btn-bgr) !important
 }
 
 li.grp-changelist-actions li.hidden {
@@ -6280,7 +6280,7 @@ body[class*=grp] .select2-container--admin-autocomplete .select2-results__option
 body[class*=grp] .select2-container--admin-autocomplete .select2-results__option--highlighted[aria-selected] {
     color: #fff;
     border-color: #267a96;
-    background-color: var(--c-bgr-btn)
+    background-color: var(--c-btn-bgr)
 }
 
 body[class*=grp] .select2-container--admin-autocomplete .select2-results__group {
@@ -6337,7 +6337,7 @@ body.grp-login #grp-content {
 body.grp-login .grp-module-login {
     border: 0 !important;
     border-radius: 6px;
-    background: var(--c-bgr-btn) !important
+    background: var(--c-btn-bgr) !important
 }
 
 body.grp-login .grp-module-login>.grp-row {
