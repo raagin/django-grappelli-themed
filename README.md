@@ -11,9 +11,9 @@ Base style:
     --font-main: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu,Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --c-bgr: #222;
     --c-btn: white;
-    --c-bgr-btn: #222;
-    --c-bgr-btn-border: #777;
-    --c-bgr-btn-hover: #333;
+    --c-btn-bgr: #222;
+    --c-btn-bgr-border: #777;
+    --c-btn-bgr-hover: #333;
     --f-color: #444;
     --f-color-dark: #222;
     --link-color-hover: #666;
