@@ -1519,7 +1519,7 @@ ul.checkboxlist.inline>div {
     width: 366px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    background: #ddd
+    background: var(--c-bgr-light)
 }
 
 .selector .selector-available.stacked,
@@ -3115,7 +3115,7 @@ body.tinyMCE input[name=src]+div a,
 body.tinyMCE input[name=href]+div a {
     color: #fff;
     border: 1px solid #ccc;
-    background-color: #DDD;
+    background-color: var(--c-bgr-light);
 }
 
 .button-state-grey,
@@ -5660,7 +5660,7 @@ button.ui-datepicker-close {
 #ui-timepicker ul li.row.ui-state-default {
     color: var(--f-color);
     border: 1px solid #c7c7c7 !important;
-    background: #e1f0f5
+    background: var(--c-bgr-light)
 }
 
 #ui-timepicker ul li.row.ui-state-default:hover {
@@ -6195,7 +6195,7 @@ body[class*=grp] .select2-container--admin-autocomplete .select2-results .select
     color: #555;
     border-radius: 3px;
     border: 1px solid #ccc;
-    background-color: #DDD;
+    background-color: var(--c-bgr-light);
     transition: color .125s ease-in-out, border .125s ease-in-out, background .125s ease-in-out
 }
 
