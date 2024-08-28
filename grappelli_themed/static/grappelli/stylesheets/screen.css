@@ -6483,14 +6483,16 @@ body.grp-login .grp-module-login .grp-module .errornote+.errornote {
 }
 
 body.grp-login .grp-module.grp-submit-row,
-body.grp-login .grp-module.grp-submit-row ul {
+body.grp-login .grp-module.grp-submit-row ul, 
+body.grp-login .grp-module.grp-submit-row > div {
     padding: 0;
     border: 0;
     background: rgba(0, 0, 0, 0)
 }
 
-body.grp-login .grp-module.grp-submit-row li,
-body.grp-login .grp-module.grp-submit-row ul li {
+body.grp-login .grp-module.grp-submit-row li, 
+body.grp-login .grp-module.grp-submit-row ul li,
+body.grp-login .grp-module.grp-submit-row > div > div {
     float: right;
     background: rgba(0, 0, 0, 0)
 }
@@ -6848,18 +6850,21 @@ body.grp-change-form #grp-content-container>form>div {
     min-width: auto
 }
 
-.grp-submit-row>ul {
+.grp-submit-row>ul,
+.grp-submit-row > div {
     margin-top: 10px;
     overflow: visible
 }
 
-.grp-submit-row>ul .clearfix:after {
+.grp-submit-row > ul .clearfix:after,
+.grp-submit-row > div .clearfix:after {
     content: "";
     display: table;
     clear: both
 }
 
-.grp-submit-row>ul>li {
+.grp-submit-row > ul > li,
+.grp-submit-row > div > div {
     list-style-type: none;
     white-space: nowrap;
     float: right;
@@ -6870,19 +6875,24 @@ body.grp-change-form #grp-content-container>form>div {
 }
 
 .grp-submit-row>ul>li:first-child,
-.grp-submit-row>ul>li.first {
+.grp-submit-row>ul>li.first,
+.grp-submit-row>div>div:first-child,
+.grp-submit-row>div>div.first {
     padding-right: 0
 }
 
-.grp-submit-row>ul>li:last-child {
+.grp-submit-row>ul>li:last-child,
+.grp-submit-row>div>div:last-child {
     padding-left: 0
 }
 
-.grp-submit-row>ul>li.last {
+.grp-submit-row>ul>li.last,
+.grp-submit-row>div>div.last {
     padding-left: 0
 }
 
-.grp-submit-row>ul>li.grp-float-left {
+.grp-submit-row > ul > li.grp-float-left,
+.grp-submit-row > div > div.grp-float-left {
     margin-left: 0;
     margin-right: 10px
 }
