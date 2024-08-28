@@ -4962,7 +4962,8 @@ li.grp-changelist-actions li.hidden {
     display: none
 }
 
-.grp-submit-row.grp-fixed-footer>ul>li.grp-changelist-actions {
+.grp-submit-row.grp-fixed-footer>ul>li.grp-changelist-actions,
+.grp-submit-row.grp-fixed-footer>div>div.grp-changelist-actions {
     padding: 5px 0 !important
 }
 
@@ -6932,11 +6933,13 @@ body.grp-change-form #grp-content-container>form>div {
     box-shadow: 0 0 10px #bbb
 }
 
-.grp-submit-row.grp-fixed-footer>ul {
+.grp-submit-row.grp-fixed-footer>ul,
+.grp-submit-row.grp-fixed-footer>div {
     margin-top: 0
 }
 
-.grp-submit-row.grp-fixed-footer>ul>li {
+.grp-submit-row.grp-fixed-footer>ul>li,
+.grp-submit-row.grp-fixed-footer>div>div {
     margin-bottom: 5px;
     padding: 5px !important;
     background: #BEBEBE
