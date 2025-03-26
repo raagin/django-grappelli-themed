@@ -6627,12 +6627,26 @@ h1#grp-admin-title {
     border-right: 0
 }
 
-#grp-user-tools>li a {
-    display: block;
-    padding: 10px 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+#grp-user-tools>li a,
+#grp-user-tools>li button {
+  display:block;
+  padding:10px 10px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+#grp-user-tools>li form button {
+  margin:0 0 2px 0 !important;
+  width:auto;
+  height:auto;
+  color:var(--c-btn);
+  font-weight:bold;
+  outline:0;
+  border:0;
+  background:rgba(0,0,0,0)
+}
+#grp-user-tools>li form button:hover {
+  color:#fff
 }
 
 #grp-content {
