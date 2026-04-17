@@ -6732,7 +6732,7 @@ body.grp-change-form #grp-content-container>form>div {
 }
 
 #grp-breadcrumbs>ul a:after {
-    content: "·";
+    content: "–";
     position: absolute;
     right: 0;
 }
