@@ -47,6 +47,10 @@
   font-weight: normal;
 }*/
 
+body.grp-filebrowser.grp-popup #grp-content {
+    top: 0 !important;
+}
+
 
 html,
 body,
