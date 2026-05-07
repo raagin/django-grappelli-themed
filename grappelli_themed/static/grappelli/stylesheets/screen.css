@@ -4966,7 +4966,8 @@ li.grp-changelist-actions li.hidden {
     display: none
 }
 
-.grp-submit-row.grp-fixed-footer>ul>li.grp-changelist-actions {
+.grp-submit-row.grp-fixed-footer>ul>li.grp-changelist-actions,
+.grp-submit-row.grp-fixed-footer>div>div.grp-changelist-actions {
     padding: 5px 0 !important
 }
 
@@ -6487,14 +6488,16 @@ body.grp-login .grp-module-login .grp-module .errornote+.errornote {
 }
 
 body.grp-login .grp-module.grp-submit-row,
-body.grp-login .grp-module.grp-submit-row ul {
+body.grp-login .grp-module.grp-submit-row ul, 
+body.grp-login .grp-module.grp-submit-row > div {
     padding: 0;
     border: 0;
     background: rgba(0, 0, 0, 0)
 }
 
-body.grp-login .grp-module.grp-submit-row li,
-body.grp-login .grp-module.grp-submit-row ul li {
+body.grp-login .grp-module.grp-submit-row li, 
+body.grp-login .grp-module.grp-submit-row ul li,
+body.grp-login .grp-module.grp-submit-row > div > div {
     float: right;
     background: rgba(0, 0, 0, 0)
 }
@@ -6628,12 +6631,26 @@ h1#grp-admin-title {
     border-right: 0
 }
 
-#grp-user-tools>li a {
-    display: block;
-    padding: 10px 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+#grp-user-tools>li a,
+#grp-user-tools>li button {
+  display:block;
+  padding:10px 10px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+#grp-user-tools>li form button {
+  margin:0 0 2px 0 !important;
+  width:auto;
+  height:auto;
+  color:var(--c-btn);
+  font-weight:bold;
+  outline:0;
+  border:0;
+  background:rgba(0,0,0,0)
+}
+#grp-user-tools>li form button:hover {
+  color:#fff
 }
 
 #grp-content {
@@ -6719,7 +6736,7 @@ body.grp-change-form #grp-content-container>form>div {
 }
 
 #grp-breadcrumbs>ul a:after {
-    content: "·";
+    content: "–";
     position: absolute;
     right: 0;
 }
@@ -6852,18 +6869,21 @@ body.grp-change-form #grp-content-container>form>div {
     min-width: auto
 }
 
-.grp-submit-row>ul {
+.grp-submit-row>ul,
+.grp-submit-row > div {
     margin-top: 10px;
     overflow: visible
 }
 
-.grp-submit-row>ul .clearfix:after {
+.grp-submit-row > ul .clearfix:after,
+.grp-submit-row > div .clearfix:after {
     content: "";
     display: table;
     clear: both
 }
 
-.grp-submit-row>ul>li {
+.grp-submit-row > ul > li,
+.grp-submit-row > div > div {
     list-style-type: none;
     white-space: nowrap;
     float: right;
@@ -6874,19 +6894,24 @@ body.grp-change-form #grp-content-container>form>div {
 }
 
 .grp-submit-row>ul>li:first-child,
-.grp-submit-row>ul>li.first {
+.grp-submit-row>ul>li.first,
+.grp-submit-row>div>div:first-child,
+.grp-submit-row>div>div.first {
     padding-right: 0
 }
 
-.grp-submit-row>ul>li:last-child {
+.grp-submit-row>ul>li:last-child,
+.grp-submit-row>div>div:last-child {
     padding-left: 0
 }
 
-.grp-submit-row>ul>li.last {
+.grp-submit-row>ul>li.last,
+.grp-submit-row>div>div.last {
     padding-left: 0
 }
 
-.grp-submit-row>ul>li.grp-float-left {
+.grp-submit-row > ul > li.grp-float-left,
+.grp-submit-row > div > div.grp-float-left {
     margin-left: 0;
     margin-right: 10px
 }
@@ -6926,11 +6951,13 @@ body.grp-change-form #grp-content-container>form>div {
     box-shadow: 0 0 10px #bbb
 }
 
-.grp-submit-row.grp-fixed-footer>ul {
+.grp-submit-row.grp-fixed-footer>ul,
+.grp-submit-row.grp-fixed-footer>div {
     margin-top: 0
 }
 
-.grp-submit-row.grp-fixed-footer>ul>li {
+.grp-submit-row.grp-fixed-footer>ul>li,
+.grp-submit-row.grp-fixed-footer>div>div {
     margin-bottom: 5px;
     padding: 5px !important;
     background: #BEBEBE
